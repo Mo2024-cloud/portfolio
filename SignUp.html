@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/SignUp.css">
+</head>
+<body>
+    
+    <div class="container my-5 text-center">
+        <div class="group m-auto w-75 p-5 rounded-3">
+            <h1>Smart Login System</h1>
+            <input oninput="validationName()" id="signInName" type="text" class="form-control my-3" placeholder="Enter Your Name">
+            <p id="msgName" class="alert alert-danger d-none">Write Capital Frist Character and 3 to 8 Small Character like (Mohamed)</p>
+
+            <input oninput="validationEmail()" id="signInEmail" type="text" class="form-control my-3" placeholder="Enter Your Email">
+            <p id="msgEmail" class="alert alert-danger d-none">Write Email Format like mohamed@gmail.com</p>
+
+            <input oninput="validationPassword()" id="signInPassword" type="password" class="form-control my-3" placeholder="Enter Your Password">
+            <p id="msgPassword" class="alert alert-danger d-none">Write Complix password</p>
+
+            <p class="text-white d-none" id="validData">Data is Valid</p>
+            <button onclick="signUp()" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+
+            <p class="text-white">You have an account?</p>
+
+            <button  class="btn btn-outline-info" id="signIn">Sign In</button>
+
+            <!-- <a class="text-white" href="">Sign In</a> -->
+        </div>
+    </div>
+
+    <script src="JS/SingUp.js"></script>
+</body>
+</html>
